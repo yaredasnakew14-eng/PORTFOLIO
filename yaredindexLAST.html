@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Yared Portfolio</title>
+
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial;
+            background: linear-gradient(to right, #0f2027, #203a43, #2c5364);
+            color: white;
+            text-align: center;
+        }
+
+        /* NAVBAR */
+        nav {
+            background: #111;
+            padding: 15px;
+        }
+
+        nav button {
+            background: none;
+            border: none;
+            color: #00ffcc;
+            margin: 10px;
+            font-size: 18px;
+            cursor: pointer;
+            transition: 0.3s;
+            padding: 5px 10px;
+            border-radius: 5px;
+        }
+
+        nav button:hover {
+            color: yellow;
+            background: rgba(255,255,255,0.1);
+            transform: scale(1.1);
+        }
+
+        /* SECTIONS */
+        .section {
+            display: none;
+            padding: 60px;
+            opacity: 0;
+            transform: scale(0.9);
+            transition: all 0.5s ease;
+        }
+
+        .active {
+            display: block;
+            opacity: 1;
+            transform: scale(1);
+        }
+
+        /* CARD */
+        .card {
+            background: rgba(255,255,255,0.1);
+            margin: auto;
+            padding: 30px;
+            width: 60%;
+            border-radius: 15px;
+            transition: 0.4s;
+        }
+
+        .card:hover {
+            transform: scale(1.05);
+            background: rgba(255,255,255,0.2);
+        }
+
+        h1 { color: white; }
+        h2 { color: #00ffd5; }
+
+        input, textarea {
+            width: 80%;
+            padding: 10px;
+            margin: 5px;
+            border-radius: 5px;
+            border: none;
+        }
+
+        button {
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            background: #00ffcc;
+            cursor: pointer;
+        }
+
+        button:hover {
+            background: yellow;
+        }
+    </style>
+</head>
+
+<body>
+
+<!-- NAVBAR -->
+<nav>
+    <button onclick="showSection('home')">Home</button>
+    <button onclick="showSection('about')">About</button>
+    <button onclick="showSection('skills')">Skills</button>
+    <button onclick="showSection('portfolio')">Portfolio</button>
+    <button onclick="showSection('cv')">CV</button>
+    <button onclick="showSection('contact')">Contact</button>
+</nav>
+
+<!-- HOME -->
+<div id="home" class="section active">
+    <div class="card">
+        <h1>Hello, I'm Yared Asnakew 👋</h1>
+        <p>Computer Science Student</p>
+    </div>
+</div>
+
+<!-- ABOUT -->
+<div id="about" class="section">
+    <div class="card">
+        <h2>About Me</h2>
+        <p>
+I am a first year Computer Science student who is passionate about technology and innovation. <br>
+I enjoy learning how software and websites are built and how they solve real-world problems. <br>
+Currently, I am studying programming languages like C++ and working on improving my web development skills. <br>
+I am highly motivated to learn new things and continuously improve myself every day. <br>
+I like solving problems, thinking logically, and creating simple projects. <br>
+My goal is to become a professional software developer in the future.
+        </p>
+
+        <h2>Education</h2>
+        <p>
+I completed my primary and secondary education at Kings Academy, where I studied from early childhood up to Grade 12. <br>
+During this time, I built a strong academic foundation and developed my interest in technology. <br>
+After successfully passing the Grade 12 national entrance exam, I joined Unity University. <br>
+Currently, I am studying Computer Science as a second year student. <br>
+At university, I am learning programming, problem solving, and fundamental computing concepts. <br>
+I am focused on improving my skills and preparing for a future career in software development.
+        </p>
+
+        <h2>Background</h2>
+        <p>
+I have always been interested in technology and how things work. <br>
+From a young age, I was curious about computers and digital systems. <br>
+This curiosity helped me develop a strong interest in programming and problem solving. <br>
+I enjoy learning new skills and exploring different areas of technology. <br>
+I am motivated to improve myself and grow step by step in my field. <br>
+My background has shaped me to be focused, curious, and determined to succeed in the tech world.
+        </p>
+    </div>
+</div>
+
+<!-- SKILLS -->
+<div id="skills" class="section">
+    <div class="card">
+        <h2>My Skills</h2>
+        <p>
+✔ Programming: C++ (basic knowledge of syntax, loops, and arrays)<br>
+✔ Web Development: HTML & CSS (creating simple and responsive web pages)<br>
+✔ Problem Solving: Logical thinking and basic algorithm understanding<br>
+✔ Computer Skills: Microsoft Word, PowerPoint, and Internet usage<br>
+✔ Learning Ability: Quick learner and highly motivated to improve<br>
+✔ Teamwork: Able to work and communicate with others effectively
+        </p>
+    </div>
+</div>
+
+<!-- PORTFOLIO -->
+<div id="portfolio" class="section">
+    <div class="card">
+        <h2>My Work</h2>
+        <p>
+✔ Personal Portfolio Website: Designed and developed a simple portfolio using HTML, CSS, and JavaScript<br>
+✔ C++ Calculator: Created a program that performs basic arithmetic operations<br>
+✔ Student Grade System: Built a C++ program to calculate and display student grades<br>
+✔ Basic Web Projects: Developed simple web pages such as profile pages and layouts<br>
+✔ Practice Projects: Completed small coding exercises to improve problem-solving skills
+        </p>
+    </div>
+</div>
+
+<!-- CV -->
+<div id="cv" class="section">
+    <div class="card">
+        <h2>My CV</h2>
+
+        <p>
+I am a Computer Science student who is interested in technology and programming. <br>
+I enjoy learning new things and improving my skills step by step. <br>
+I like solving problems and building simple projects.
+        </p>
+
+        <h3>Education</h3>
+        <p>
+I studied at Kings Academy from early childhood up to Grade 12. <br>
+After passing the national entrance exam, I joined Unity University. <br>
+Now I am a second-year Computer Science student.
+        </p>
+
+        <h3>Skills</h3>
+        <p>
+✔ C++<br>
+✔ HTML & CSS<br>
+✔ Problem Solving<br>
+✔ Basic Computer Skills
+        </p>
+
+        <h3>Goal</h3>
+        <p>
+My goal is to become a software developer and improve my skills in programming.
+        </p>
+    </div>
+</div>
+
+<!-- CONTACT -->
+<div id="contact" class="section">
+    <div class="card">
+        <h2>Contact Me</h2>
+
+        <p>
+            Email:
+            <a href="mailto:yared@gmail.com" style="color:#00ffcc;">
+                yada78780079@gmail.com
+            </a>
+        </p>
+
+        <form>
+            <input type="text" placeholder="Your Name"><br>
+            <input type="email" placeholder="Your Email"><br>
+            <textarea placeholder="Your Message"></textarea><br>
+
+            <button type="submit">Send</button>
+        </form>
+    </div>
+</div>
+
+<script>
+function showSection(sectionId) {
+    let sections = document.querySelectorAll('.section');
+
+    sections.forEach(sec => {
+        sec.classList.remove('active');
+    });
+
+    document.getElementById(sectionId).classList.add('active');
+}
+</script>
+
+</body>
+</html>
