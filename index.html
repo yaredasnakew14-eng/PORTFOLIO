@@ -48,18 +48,23 @@
             background: rgba(255,255,255,0.1);
             margin: auto;
             padding: 30px;
-            width: 60%;
+            width: 70%;
             border-radius: 15px;
             transition: 0.4s;
         }
 
         .card:hover {
-            transform: scale(1.05);
+            transform: scale(1.03);
             background: rgba(255,255,255,0.2);
         }
 
-        h1 { color: white; }
-        h2 { color: #00ffd5; }
+        h2 {
+            color: #00ffd5;
+        }
+
+        h3 {
+            color: #00ffcc;
+        }
 
         .profile-img {
             width: 180px;
@@ -70,15 +75,24 @@
             border: 3px solid #00ffcc;
         }
 
+        a {
+            color: #00ffcc;
+            text-decoration: none;
+        }
+
+        a:hover {
+            color: yellow;
+        }
+
         input, textarea {
             width: 80%;
             padding: 10px;
-            margin: 5px;
+            margin: 8px;
             border-radius: 5px;
             border: none;
         }
 
-        button.submit {
+        button.send {
             padding: 10px 20px;
             border: none;
             border-radius: 5px;
@@ -86,7 +100,7 @@
             cursor: pointer;
         }
 
-        button.submit:hover {
+        button.send:hover {
             background: yellow;
         }
     </style>
@@ -106,30 +120,34 @@
 <!-- HOME -->
 <div id="home" class="section active">
     <div class="card">
-        <img src="photo.jpg" class="profile-img" alt="profile image">
+        <img src="photo.jpg" class="profile-img">
 
         <h1>Hello, I'm Yared Asnakew 👋</h1>
-        <p>Computer Science Student</p>
+        <p>Computer Science Student | Future Software Developer</p>
     </div>
 </div>
 
 <!-- ABOUT -->
 <div id="about" class="section">
     <div class="card">
-        <img src="photo.jpg" class="profile-img" alt="profile image">
+        <img src="photo.jpg" class="profile-img">
 
         <h2>About Me</h2>
+
         <p>
-I am a first year Computer Science student who is passionate about technology and innovation.<br>
-I enjoy learning how software and websites are built and how they solve real-world problems.<br>
-Currently, I am studying programming languages like C++ and web development.<br>
-My goal is to become a professional software developer.
+I am <b>Yared Asnakew Mengiste</b>, a 2nd year Computer Science student at Unity University in Addis Ababa, Ethiopia.<br><br>
+
+I have a strong passion for technology, coding, and building simple but useful software projects. I enjoy learning how websites, applications, and systems are created and how they function in real life.<br><br>
+
+Every day, I try to improve my programming skills and become better at problem-solving. I believe that consistency and practice are the key to becoming a good developer.<br><br>
+
+I also enjoy working on small projects because they help me understand real programming concepts and improve my creativity. My goal is to become a skilled software engineer who can build useful applications for people.
         </p>
 
-        <h2>Education</h2>
+        <h3>Education</h3>
         <p>
-I completed my primary and secondary education at Kings Academy.<br>
-After passing Grade 12, I joined Unity University.
+✔ Unity University — Computer Science (2nd Year, 2024 – Present)<br>
+✔ King’s Academy — High School Graduate
         </p>
     </div>
 </div>
@@ -137,12 +155,13 @@ After passing Grade 12, I joined Unity University.
 <!-- SKILLS -->
 <div id="skills" class="section">
     <div class="card">
-        <h2>My Skills</h2>
+        <h2>Skills</h2>
         <p>
 ✔ C++ Programming<br>
 ✔ HTML & CSS<br>
+✔ Basic Web Development<br>
 ✔ Problem Solving<br>
-✔ Teamwork
+✔ Logical Thinking
         </p>
     </div>
 </div>
@@ -150,10 +169,11 @@ After passing Grade 12, I joined Unity University.
 <!-- PORTFOLIO -->
 <div id="portfolio" class="section">
     <div class="card">
-        <h2>My Work</h2>
+        <h2>Projects</h2>
         <p>
-✔ Portfolio Website<br>
-✔ C++ Calculator<br>
+✔ Personal Portfolio Website<br>
+✔ Simple Calculator (C++)<br>
+✔ Basic Programming Practice Projects<br>
 ✔ Student Grade System
         </p>
     </div>
@@ -162,35 +182,109 @@ After passing Grade 12, I joined Unity University.
 <!-- CV -->
 <div id="cv" class="section">
     <div class="card">
-        <h2>My CV</h2>
-        <p>Computer Science student passionate about coding and technology.</p>
+
+        <h2>MY CV</h2>
+
+        <p>
+I am <b>Yared Asnakew Mengiste</b>, a motivated and dedicated Computer Science student at Unity University in Addis Ababa, Ethiopia.<br><br>
+
+I am passionate about software development and enjoy learning how programs, websites, and systems are designed and built. I like turning ideas into simple working applications using code.<br><br>
+
+I am continuously improving my skills in programming and problem-solving through practice, projects, and self-learning. I always try to understand the logic behind how things work in computer science.<br><br>
+
+My goal is to become a professional software engineer who can build useful, efficient, and user-friendly applications that solve real-world problems.
+        </p>
+
+        <h3>Personal Information</h3>
+        <p>
+Name: Yared Asnakew Mengiste<br>
+Date of Birth: 08 April 2005<br>
+Location: Addis Ababa, Ethiopia<br>
+Nationality: Ethiopian
+        </p>
+
+        <h3>Education</h3>
+        <p>
+Unity University — Computer Science (2nd Year, 2024 – Present)<br>
+King’s Academy — High School Graduate
+        </p>
+
+        <h3>Technical Skills</h3>
+        <p>
+C++ Programming<br>
+HTML & CSS<br>
+Basic Web Development<br>
+Problem Solving<br>
+Logical Thinking
+        </p>
+
+        <h3>Projects</h3>
+        <p>
+Personal Portfolio Website<br>
+Simple Calculator (C++)<br>
+Student Grade System<br>
+Basic Programming Practice Projects
+        </p>
+
+        <h3>Languages</h3>
+        <p>
+English (Fluent)<br>
+Amharic (Native)
+        </p>
+
+        <h3>Interests</h3>
+        <p>
+Web Development<br>
+Software Engineering<br>
+Building Real Projects<br>
+Learning New Technologies
+        </p>
+
     </div>
 </div>
 
 <!-- CONTACT -->
 <div id="contact" class="section">
     <div class="card">
+
         <h2>Contact Me</h2>
 
-        <p>Email:
-            <a href="mailto:yared@gmail.com" style="color:#00ffcc;">
-                yared@gmail.com
+        <p>📧 Email:
+            <a href="mailto:yada78780079@gmail.com">
+                yada78780079@gmail.com
             </a>
         </p>
+
+        <p>📱 Phone: +251983555565</p>
+
+        <p>💬 Telegram:
+            <a href="https://t.me/YADA_7" target="_blank">
+                @YADA_7
+            </a>
+        </p>
+
+        <p>📸 Instagram:
+            <a href="https://instagram.com/yada__yada7" target="_blank">
+                @yada__yada7
+            </a>
+        </p>
+
+        <h3>Send Message</h3>
 
         <form>
             <input type="text" placeholder="Your Name"><br>
             <input type="email" placeholder="Your Email"><br>
             <textarea placeholder="Your Message"></textarea><br>
-            <button class="submit" type="submit">Send</button>
+            <button class="send" type="submit">Send</button>
         </form>
+
     </div>
 </div>
 
 <script>
 function showSection(id) {
     let sections = document.querySelectorAll('.section');
-    sections.forEach(s => s.classList.remove('active'));
+    sections.forEach(sec => sec.classList.remove('active'));
     document.getElementById(id).classList.add('active');
 }
 </script>
